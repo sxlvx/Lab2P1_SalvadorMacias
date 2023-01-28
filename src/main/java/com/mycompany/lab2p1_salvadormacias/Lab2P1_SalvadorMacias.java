@@ -22,11 +22,10 @@ public class Lab2P1_SalvadorMacias {
 
                     boolean primo = true;
                     int suma = 0;
-                        
+
                     System.out.print("Ingrese n: ");
                     int num = lea.nextInt();
-                    
-                    
+
                     for (int i = 1; i < num; i++) {
                         if (num % i == 0) {
                             suma += i;
@@ -37,15 +36,15 @@ public class Lab2P1_SalvadorMacias {
                         System.out.println("Es primo, no se pudo realizar el calculo por falta de divisores.");
                     } else if (suma == num) {
                         System.out.println("Es un numero perfecto.");
-                        System.out.print("Divisores: 1  ");
                         for (int i = 2; i < num; i++) {
                             if (num % i == 0) {
+                                System.out.print("Divisores:" + "1" + i + " ");
+
                                 System.out.print(i + " ");
                             }
                         }
                     }
-                
-                    
+
                 }//fin case 1
                 break;
 
@@ -85,10 +84,10 @@ public class Lab2P1_SalvadorMacias {
                     System.out.println("ingrese x ");
                     int x = lea.nextInt();
                     for (int i = 1; i <= x; i++) {
-                        System.out.print(a + " " + b + " " + n);
-                        n *= neg;
+                        System.out.print("0 1 " + n);
+                        System.out.println("");
+
                         n += 5;
-                        n *= b;
 
                     }
 
